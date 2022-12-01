@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupinfoActivity">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="192dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="상세 정보"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/bmdohyeon"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/region_info"
+        android:layout_width="343dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="지역 : "
+        android:textSize="25sp"
+        android:fontFamily="@font/bmdohyeon"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/old_info"
+        android:layout_width="343dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="204dp"
+        android:gravity="center"
+        android:text="희망 나이 : "
+        android:textSize="25sp"
+        android:fontFamily="@font/bmdohyeon"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/person_info"
+        android:layout_width="343dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="288dp"
+        android:gravity="center"
+        android:text="참여 인원 : "
+        android:textSize="25sp"
+        android:fontFamily="@font/bmdohyeon"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sex_info"
+        android:layout_width="343dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="372dp"
+        android:gravity="center"
+        android:text="희망 성별 : "
+        android:textSize="25sp"
+        android:fontFamily="@font/bmdohyeon"
+
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_info"
+        android:layout_width="343dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="548dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:gravity="center"
+        android:text="희망 시간 : "
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date_info"
+        android:layout_width="343dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="460dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:gravity="center"
+        android:text="희망 날짜 : "
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/admission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="참가"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

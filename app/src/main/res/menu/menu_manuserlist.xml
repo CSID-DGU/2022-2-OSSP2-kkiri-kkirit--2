@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id = "@+id/userTitle" android:title = "유저 선택">
+        <menu>
+            <item android:id = "@+id/user1" android:title = "유저 1"/>
+            <item android:id = "@+id/user2" android:title = "유저 2"/>
+            <item android:id = "@+id/user3" android:title = "유저 3"/>
+            <item android:id = "@+id/user4" android:title = "유저 4"/>
+        </menu>
+    </item>
+</menu>

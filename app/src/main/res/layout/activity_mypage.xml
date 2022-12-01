@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MypageActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/myprofile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mypage_userid"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="닉네임"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="님"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toEndOf="@+id/mypage_userid"
+        app:layout_constraintTop_toTopOf="@+id/mypage_userid" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goProfEdit"
+        android:layout_width="210dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="프로필 수정"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_userid" />
+
+    <TextView
+        android:id="@+id/mypage_userPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mypage_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/mypage_userPass"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mypage_userAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/mypage_userName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gotomyTextDeliv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="내가 만든 그룹_배달"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/gotomyTextRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="내가 만든 그룹_맛집"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/gotomyTextDeliv"
+        app:layout_constraintTop_toBottomOf="@+id/gotomyTextDeliv" />
+
+    <Button
+        android:id="@+id/gotoGroupDeliv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="그룹 현황_배달"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/gotomyTextRest"
+        app:layout_constraintTop_toBottomOf="@+id/gotomyTextRest" />
+
+    <Button
+        android:id="@+id/gotoGroupRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="그룹 현황_맛집"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/gotoGroupDeliv"
+        app:layout_constraintTop_toBottomOf="@+id/gotoGroupDeliv" />
+
+    <Button
+        android:id="@+id/gotoChkDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="매너 점수"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/gotoGroupRest"
+        app:layout_constraintTop_toBottomOf="@+id/gotoGroupRest" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="로그아웃"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotoChkDegree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

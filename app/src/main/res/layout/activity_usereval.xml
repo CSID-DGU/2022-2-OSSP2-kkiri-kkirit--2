@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserevalActivity">
+
+    <TextView
+        android:id="@+id/usereval_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="비매너 평가"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/eva4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="약속 시간을 당일 변경했어요."
+        android:fontFamily="@font/bmdohyeon"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/eva5"
+        app:layout_constraintTop_toBottomOf="@+id/eva3" />
+
+    <RadioButton
+        android:id="@+id/eva2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="채팅 중 욕설을 사용했어요."
+        android:fontFamily="@font/bmdohyeon"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/eva3"
+        app:layout_constraintTop_toBottomOf="@+id/eva1" />
+
+    <RadioButton
+        android:id="@+id/eva3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="약속 시간을 지키지 않았어요."
+        android:fontFamily="@font/bmdohyeon"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/eva4"
+        app:layout_constraintTop_toBottomOf="@+id/eva2" />
+
+    <RadioButton
+        android:id="@+id/eva1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="답장이 느려요."
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/eva2"
+        app:layout_constraintTop_toBottomOf="@+id/usereval_title" />
+
+    <RadioButton
+        android:id="@+id/eva5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="기타 사유"
+        android:fontFamily="@font/bmdohyeon"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/etc"
+        app:layout_constraintTop_toBottomOf="@+id/eva4" />
+
+    <EditText
+        android:id="@+id/etc"
+        android:layout_width="333dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/bmdohyeon"
+        android:inputType="textPersonName"
+        android:text="기타 사유를 입력해주세요"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eva5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="제출"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etc" />
+
+    <Spinner
+        android:id="@+id/usereval_choice"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:scrollbarSize="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/usereval_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/evUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bmdohyeon"
+        android:text="유저이름"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eva1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usereval_title"
+        app:layout_constraintVertical_bias="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
